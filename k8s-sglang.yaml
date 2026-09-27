@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sglang-radix-router
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sglang-radix
+  template:
+    metadata:
+      labels:
+        app: sglang-radix
+    spec:
+      containers:
+      - name: engine
+        image: lmsysorg/sglang:latest
+        resources:
+          limits:
+            nvidia.com/gpu: "2"
+        ports:
+        - containerPort: 8000

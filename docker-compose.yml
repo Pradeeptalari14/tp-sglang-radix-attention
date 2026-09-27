@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  sglang-radix-gateway:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - SGLANG_MEM_FRACTION=0.9
+      - SGLANG_DISABLE_RADIX_CACHE=0

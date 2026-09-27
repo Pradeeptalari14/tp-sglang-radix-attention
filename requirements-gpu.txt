@@ -1,0 +1,4 @@
+sglang>=0.4.0
+torch>=2.3.0
+triton>=2.3.0
+flashinfer>=0.1.5

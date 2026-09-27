@@ -1,0 +1,6 @@
+{
+  "name": "tp-sglang-radix-attention",
+  "version": "1.0.0",
+  "description": "SGLang RadixAttention Studio",
+  "scripts": { "test": "bash scripts/validate.sh" }
+}
